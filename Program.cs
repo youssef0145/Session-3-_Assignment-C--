@@ -29,9 +29,16 @@ namespace assignment2
             #region Q3
             //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
             //object.Print the final result.
-            StringBuilder sb = new StringBuilder();
-            sb.Append("book list");
-            sb.Append(" - updated");
+            ////StringBuilder sb = new StringBuilder();
+            ////sb.Append("book list");
+            ////sb.Append(" - updated");
+            ////Console.WriteLine(sb);
+            #endregion
+
+            #region Q4
+            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
+            sb.Replace("book list", "library");
             Console.WriteLine(sb);
             #endregion
 
