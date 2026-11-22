@@ -111,18 +111,29 @@ namespace assignment2
             #region Q12
             //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
             //to print each book with its position number, like 1.Clean Code.
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            ////string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             ////for (int i = 0; i < books.Length; i++)
             ////    Console.WriteLine($"{i+1}. {books[i]}");
             #endregion
 
             #region Q13
             //Using the same books array, use a while loop to print every book title.
-            int i = 0;
-            while (i< books.Length)
+            ////int i = 0;
+            ////while (i< books.Length)
+            ////{
+            ////    Console.WriteLine(books[i++]);
+            ////}
+            #endregion
+
+            #region Q14
+            //Write a do-while loop that prints "Checking book..." exactly 3 times.
+            int count = 0;
+            do
             {
-                Console.WriteLine(books[i++]);
+                Console.WriteLine("checking book");
+                count++;
             }
+            while (count < 3);
             #endregion
 
         }
