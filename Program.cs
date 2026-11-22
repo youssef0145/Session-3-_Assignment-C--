@@ -53,7 +53,12 @@ namespace assignment2
 
             #region Q6
             //Build the same sentence as above, but using string interpolation ($"...").
-            Console.WriteLine($"book:{title} , pages= {pages}");
+            ////Console.WriteLine($"book:{title} , pages= {pages}");
+            #endregion
+
+            #region Q7
+            //Build the same sentence again, but using string.Format().
+            Console.WriteLine(string.Format("title: {0} , pages= {1}", title, pages));
             #endregion
 
         }
