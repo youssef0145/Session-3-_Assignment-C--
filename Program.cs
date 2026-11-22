@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Channels;
@@ -47,7 +48,12 @@ namespace assignment2
             //Pages: 464" using the + operator.
             string title = "Clean Code";
             int pages = 464;
-            Console.WriteLine("book:"+title+ ", pages=" +pages);
+            ////Console.WriteLine("book:"+title+ ", pages=" +pages);
+            #endregion
+
+            #region Q6
+            //Build the same sentence as above, but using string interpolation ($"...").
+            Console.WriteLine($"book:{title} , pages= {pages}");
             #endregion
 
         }
