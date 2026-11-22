@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Reflection;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Channels;
@@ -156,12 +157,24 @@ namespace assignment2
             #region Q17
             //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
             //continue, don't stop the loop).
-            foreach (string book in books)
+            ////foreach (string book in books)
+            ////{
+            ////    if (book == "The Pragmatic Programmer")
+            ////        continue;
+            ////    Console.WriteLine(book);
+            ////}
+            #endregion
+
+            #region Q18
+            //Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+            //use return to exit the method early instead of printing anything.
+            void PrintFirstBook(string[]books)
             {
-                if (book == "The Pragmatic Programmer")
-                    continue;
-                Console.WriteLine(book);
+                if (books.Length == 0)
+                    return;
+                Console.WriteLine(books[0]);
             }
+            PrintFirstBook(books);
             #endregion
         }
     }
